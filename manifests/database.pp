@@ -302,7 +302,7 @@ define oradb::database(
         $command_amm = ''
       }
 
-      $command = "${command_pre} ${command_amm} ${command_storage} ${command_data_file} ${command_var} ${command_init} ${command_nodes} ${elevation_suffix}"
+      $command = "${command_pre} -ignorePreReqs ${command_amm} ${command_storage} ${command_data_file} ${command_var} ${command_init} ${command_nodes} ${elevation_suffix}"
 
     } else {
       if ( $version in ['12.2','18.3','19.3']) {
